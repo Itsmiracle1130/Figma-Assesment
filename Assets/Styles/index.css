@@ -5,11 +5,12 @@
 }
 
 body{
-    background-color: black;
+    background-color: var(--bg-color);
 }
 nav{
 display: flex;
 flex-direction: row;
+justify-content: space-around;
 }
 
 
@@ -54,7 +55,7 @@ flex-direction: row;
     justify-content: space-around;
     width: 159px;
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 0;
 
  }
