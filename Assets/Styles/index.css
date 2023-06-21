@@ -104,6 +104,10 @@ nav {
   font-family: var(--semibold-font);
   font-size: 16px;
 }
+.nav-log p{
+   position: relative;
+   bottom: 20px;
+}
 .button {
   background-color: var(--blue1);
   border-radius: 20px;
@@ -113,11 +117,10 @@ nav {
   height: 42px;
   width: 142px;
 }
-.button a{
+.button p{
   text-align: center;
   position: relative;
-  top: 9px;
-  left: 10px;
+  bottom: 8px;
 }
 nav div a {
   padding: 0 20px;
@@ -149,6 +152,14 @@ p{
    font-size: 18px;
    font-family: var(--medium-font)
 }
+section{
+   position: relative;
+}
+.paint{
+   position: absolute;
+   left: 595px;
+   top: 170px;
+}
 /* style the button below */
 .body-nav .button a{
    text-align: center;
@@ -164,7 +175,14 @@ p{
    margin: 0 auto;
    position: relative;
    top: 32px;
-   font-family: var(--semibold-font);
-
-   
+   font-family: var(--semibold-font);  
+}
+#signup{
+   position: relative;
+   right: 45px;
+   bottom: 8px;
+}
+.body-nav p{
+   position: relative;
+   bottom: 20px;
 }
