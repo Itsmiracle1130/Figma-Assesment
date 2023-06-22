@@ -1,7 +1,14 @@
 body {
   background-color: var(--bg-color);
-  max-width: 100%;
-  padding: 1px 100px;
+  max-width: 1340px;
+  margin: 0 auto;
+  /* padding: 1px 100px; */
+}
+p {
+  font-family: var(--semibold-font);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
 /* @media screen (max-width: 1440px) {
    body{
@@ -14,7 +21,7 @@ body {
   --bg-color: rgba(255, 255, 255, 1);
   --bold-font: Gilroy-Bold;
   --semibold-font: Gilroy-SemiBold;
-  --medium-font: Gilroy-Medium
+  --medium-font: Gilroy-Medium;
 }
 /* style scissor logo */
 .oval {
@@ -104,9 +111,9 @@ nav {
   font-family: var(--semibold-font);
   font-size: 16px;
 }
-.nav-log p{
-   position: relative;
-   bottom: 20px;
+.nav-log p {
+  position: relative;
+  bottom: 20px;
 }
 .button {
   background-color: var(--blue1);
@@ -117,72 +124,131 @@ nav {
   height: 42px;
   width: 142px;
 }
-.button p{
+.button p {
   text-align: center;
   position: relative;
-  bottom: 8px;
+  bottom: 1px;
+  font-size: 16px;
+  line-height: 12px;
 }
 nav div a {
   padding: 0 20px;
 }
 
 /* Style the wrtie-up in landing page */
-h1, p{
-   text-align: center;
+h1,
+p {
+  text-align: center;
 }
-h1{
-   font-family: var(--bold-font);
-   font-size: 40px;
+h1 {
+  font-family: var(--bold-font);
+  font-size: 40px;
 }
-.body-head{
-   width: 948px;
-   height: 200px;
-   margin: 0 auto;
-   margin-top: 118px;
-   margin-bottom: 0px;
-   line-height: 96px;
+.body-head {
+  width: 948px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 118px;
+  margin-bottom: 0px;
+  line-height: 96px;
 }
-.body-par{
-   height: 105px;
-   width: 781px;
-   margin: 0 auto;
-   line-height: 28px;
+.body-par {
+  height: 105px;
+  width: 781px;
+  margin: 0 auto;
+  line-height: 28px;
 }
-p{
-   font-size: 18px;
-   font-family: var(--medium-font)
+p {
+  font-size: 18px;
+  font-family: var(--medium-font);
 }
-section{
-   position: relative;
+section {
+  position: relative;
 }
-.paint{
-   position: absolute;
-   left: 595px;
-   top: 170px;
+.paint {
+  position: absolute;
+  left: 595px;
+  top: 170px;
 }
 /* style the button below */
-.body-nav .button a{
-   text-align: center;
-   position: relative;
-   left: 45px;
-   
+.body-nav .button a {
+  text-align: center;
+  position: relative;
+  left: 45px;
 }
-.body-nav{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 270px;
-   margin: 0 auto;
-   position: relative;
-   top: 32px;
-   font-family: var(--semibold-font);  
+.body-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 270px;
+  margin: 0 auto;
+  position: relative;
+  top: 32px;
+  font-family: var(--semibold-font);
 }
-#signup{
-   position: relative;
-   right: 45px;
-   bottom: 8px;
+#signup {
+  position: relative;
+  right: 45px;
+  bottom: 8px;
 }
-.body-nav p{
-   position: relative;
-   bottom: 20px;
+.body-nav p {
+  position: relative;
+  bottom: 20px;
+}
+
+/* Style the object below the button */
+.object {
+  position: absolute;
+  width: 668px;
+  height: 224px;
+  border: 0.5px solid #005ae2;
+  border-radius: 24px;
+  background: rgba(254, 254, 254, 0.1);
+  left: 500px;
+  top: 680px;
+  backdrop-filter: blur(106px);
+}
+/* style the object icons */
+.link-arrow {
+  padding-bottom: 13px;
+}
+.object-icons {
+  position: relative;
+  left: 60px;
+  top: 70px;
+}
+/* style oject text */
+.object-text {
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+}
+/* style object behind object */
+.object-behind {
+  position: relative;
+  height: 257px;
+  left: 410px;
+  top: 75px;
+}
+
+/* Style floor object */
+/* Trapezoid */
+.floor-object {
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  right: 50px;
+  padding: 0;
+}
+/* Oval shape */
+.oval-floor {
+  position: absolute;
+  height: 50px;
+  width: 950px;
+  background-color: #E2E9F0;
+  border-radius: 50%;
+  top: 30px;
+  left: 250px;
+  filter: drop-shadow(0px 4px 4px rgba(18, 36, 89, 0.35));
 }
