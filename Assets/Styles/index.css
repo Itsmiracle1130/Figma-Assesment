@@ -1,8 +1,7 @@
 /* define the necessary variables */
 :root {
   --blue1: #0065fe;
-  --bg-color: yellow;
-  /* rgba(255, 255, 255, 1) */
+  --bg-color: rgba(255, 255, 255, 1);
   --bold-font: Gilroy-Bold;
   --semibold-font: Gilroy-SemiBold;
   --medium-font: Gilroy-Medium;
@@ -14,7 +13,7 @@ body {
   margin: 0 auto;
   /* padding: 1px 100px; */
 }
-p {
+p, #features ~ option {
   font-family: var(--semibold-font);
   font-size: 16px;
   line-height: 24px;
@@ -69,12 +68,10 @@ p {
   justify-content: space-around;
   width: 180px;
   float: left;
-  /* border: 1px solid black; */
   padding-top: 0;
 }
 .chain-logo {
   position: relative;
-  /* border: 1px solid black; */
   padding: 0;
   height: 24px;
   width: 24px;
@@ -107,6 +104,9 @@ nav {
 .nav-btn,
 .nav-log {
   padding-top: 23px;
+}
+#features{
+  border: 0 solid var(--bg-color)
 }
 .nav-log {
   display: flex;
@@ -259,6 +259,15 @@ section {
 
 /* FAQs */
 .FAQ-body{
-  /* background-image: url("Assets/Images/FAQs\ background.svg"); */
-  background-color: black;
+  background-image: url("/Assets/Images/FAQs\ background.svg");
+  background-size: cover;
+}
+.faq-pipe{
+  position: relative;
+  left: 600px;
+  top: 80px;
+}
+.faq-head-wrapper{
+  position: relative;
+  bottom: 60px;
 }
