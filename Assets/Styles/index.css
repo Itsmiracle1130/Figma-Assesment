@@ -6,6 +6,7 @@
   --semibold-font: Gilroy-SemiBold;
   --medium-font: Gilroy-Medium;
   --blue2: #005AE2;
+  --blue3: #1E3448;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   font-size: 24px;
 }
 
-p {
+p, a {
   font-family: var(--semibold-font);
   font-size: 16px;
   line-height: 24px;
@@ -98,15 +99,16 @@ nav {
   bottom: 10px;
   height: 42px;
   width: 142px;
+  margin: 0 17px;
+  transition-duration: 0.2s;
 }
-.white-button{
-  background-color: var(--blue1);
-  border-radius: 20px;
-  color: white;
-  position: relative;
-  bottom: 10px;
-  height: 42px;
-  width: 142px;
+.blue-button:hover{
+  background-color: #0664f1;
+}
+.blue-button:active{
+ background-color: #034bb6;
+ box-shadow: 1px 2px #666;
+ transform: translateY(2px);
 }
 .blue-button p {
   text-align: center;
@@ -174,11 +176,7 @@ section {
   top: 32px;
   font-family: var(--semibold-font);
 }
-#signup {
-  position: relative;
-  right: 45px;
-  top: 13px;
-}
+
 .body-nav p {
   position: relative;
   bottom: 3px;
@@ -367,29 +365,46 @@ section {
 
 
 
-/* Style Plan prices */
+/* Style and animate Plan prices */
 .plan-wrapper{
 display: flex;
 flex-direction: row;
-border: 1px dashed blue;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 position: relative;
-top: 130px;
-width: 1088px;
+top: 40px;
+width: 1188px;
 height: 690px;
 margin: 0 auto;
+gap: 1px;
 }
 
 .plan{
 border: 0.4px solid var(--blue2);
 border-radius: 12px;
 box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
-width: 359px;
+width: 349px;
 height: 435px;
 padding-left: 60px;
 padding-top: 20px;
+position: relative;
 }
+.plan:hover{
+  border: 2px solid var(--blue2);
+  transform: translateY(-4px);
+  
+  
+}
+.plan:active{
+  background-color: var(--blue3);
+  color: white;
+  transform: translateY(-6px);
+  transform: translateY(6px);
+  height: 520px;
+  width: 424px;
+
+}
+
 /* align text to left */
 .left{
   text-align: left;
@@ -406,6 +421,35 @@ padding-top: 20px;
 .price-buttons{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  top: 180px;
+  gap: 10px;
+}
+/* style and animate white button */
+.white-button{
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid var(--blue2);
+  color: var(--blue2);
+  position: relative;
+  bottom: 10px;
+  height: 42px;
+  width: 142px;
+  transition-duration: 0.2s;
+}
+.white-button:hover{
+  background-color: var(--blue2);
+  color: white;
+}
+.white-button:active{
+  background-color: #034bb6;
+  box-shadow: 1px 2px #666;
+  transform: translateY(2px);
 }
 
+.price-buttons .white-button{
+
+}
 
