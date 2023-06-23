@@ -5,6 +5,7 @@
   --bold-font: Gilroy-Bold;
   --semibold-font: Gilroy-SemiBold;
   --medium-font: Gilroy-Medium;
+  --blue2: #005AE2;
 }
 
 body {
@@ -13,6 +14,24 @@ body {
   margin: 0 auto;
   /* padding: 1px 100px; */
 }
+
+/* Font sizes */
+.font14{
+  font-size: 14px;
+}
+.font16{
+  font-size: 16px;
+}
+.font18{
+  font-size: 18px;
+}
+.font20{
+  font-size: 20px;
+}
+.font24{
+  font-size: 24px;
+}
+
 p {
   font-family: var(--semibold-font);
   font-size: 16px;
@@ -69,9 +88,9 @@ nav {
 }
 .nav-log p {
   position: relative;
-  bottom: 20px;
+  bottom: 3px;
 }
-.button {
+.blue-button {
   background-color: var(--blue1);
   border-radius: 20px;
   color: white;
@@ -80,21 +99,34 @@ nav {
   height: 42px;
   width: 142px;
 }
-.button p {
+.white-button{
+  background-color: var(--blue1);
+  border-radius: 20px;
+  color: white;
+  position: relative;
+  bottom: 10px;
+  height: 42px;
+  width: 142px;
+}
+.blue-button p {
   text-align: center;
   position: relative;
-  bottom: 1px;
+  top: 13px;
   font-size: 16px;
   line-height: 12px;
+  left: 1px;
 }
 nav div a {
   padding: 0 20px;
 }
 
-/* Style the wrtie-up in landing page */
+/* Style the write-up in landing page */
 h1,
 p {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 7px;
+  padding-bottom: 0;
 }
 h1 {
   font-family: var(--bold-font);
@@ -145,11 +177,11 @@ section {
 #signup {
   position: relative;
   right: 45px;
-  bottom: 8px;
+  top: 13px;
 }
 .body-nav p {
   position: relative;
-  bottom: 20px;
+  bottom: 3px;
 }
 
 /* Style the object below the button */
@@ -184,8 +216,8 @@ section {
 .object-behind {
   position: relative;
   height: 257px;
-  left: 410px;
-  top: 75px;
+  left: 437px;
+  top: 135px;
 }
 
 /* Style floor object */
@@ -215,19 +247,25 @@ section {
   background-image: url("/Assets/Images/FAQs\ background.svg");
   background-size: cover;
 }
-.faq-pipe{
+
+#pipe{
   position: relative;
-  left: 600px;
-  top: 80px;
+  right: 11px; 
+  top: 9px;
 }
 .faq-head-wrapper{
   position: relative;
-  bottom: 60px;
+  width: 600px;
+  margin: 0 auto;
+  top: 50px;  
 }
 
 /* Style FAQ tabs */
+/* Accordion style */
 .ac-container {
   max-width: 955px;
+  position: relative;
+  top: 100px;
 }
 
 .ac-container label {
@@ -326,3 +364,48 @@ section {
 .ac-container input:checked ~ article.ac-large {
   height: 230px;
 }
+
+
+
+/* Style Plan prices */
+.plan-wrapper{
+display: flex;
+flex-direction: row;
+border: 1px dashed blue;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 130px;
+width: 1088px;
+height: 690px;
+margin: 0 auto;
+}
+
+.plan{
+border: 0.4px solid var(--blue2);
+border-radius: 12px;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+width: 359px;
+height: 435px;
+padding-left: 60px;
+padding-top: 20px;
+}
+/* align text to left */
+.left{
+  text-align: left;
+  margin: 15px 0;
+}
+/* Tick */
+.tick{
+  position: relative;
+  margin-right: 7px;
+  top: 3px;
+}
+
+/* Style Price Buttons */
+.price-buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+

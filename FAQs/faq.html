@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --blue1: #0065fe;
+        --bg-color: rgba(255, 255, 255, 1);
+        --bold-font: Gilroy-Bold;
+        --semibold-font: Gilroy-SemiBold;
+        --medium-font: Gilroy-Medium;
+      }
+    </style>
     <title>FAQs</title>
     <link href="/Assets/Styles/index.css" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
@@ -11,12 +20,15 @@
   <body class="FAQ-body">
     <div>
       <nav>
-        <!-- Build the chain logo -->
+        <!-- Navigation tab -->
+        <!-- logo -->
         <div class="scissor-logo">
-        <a href="../index.html">
-        <img src="/Assets/Images/Logo.svg">
-        </a>
+          <a href="../index.html">
+            <img src="/Assets/Images/Logo.svg" />
+          </a>
         </div>
+
+        <!-- mid nav tab -->
         <div class="nav-btn">
           <a style="color: var(--blue1)">My URLs</a>
           <label for="features">Features</label>
@@ -30,21 +42,24 @@
           <a>Analytics</a>
           <a href="./faq.html">FAQs</a>
         </div>
+
+        <!-- right nav tab -->
         <div class="nav-log">
           <p><a style="color: var(--blue1); font-size: 16px">Log in</a></p>
-          <div class="button">
+          <div class="blue-button">
             <p>
-              <a href="Try-Free/free.html" style="font-size: 16px"
-                >Try for free</a
-              >
+              <a href="/plan/plan.html" style="font-size: 16px">Try for free</a>
             </p>
           </div>
         </div>
       </nav>
+
+      <!-- Body -->
       <div class="faq-container">
         <div class="faq-head-wrapper">
-          <img src="/Assets/Images/FramePipe.svg" class="faq-pipe" />
-          <h1>FAQs</h1>
+          <h1>
+            <img src="/Assets/Images/FramePipe.svg" id="pipe" />FAQs
+          </h1>
         </div>
         <section class="ac-container">
           <div>
