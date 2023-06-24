@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>URLs</title>
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
-    <link href="Assets/Styles/index.css" rel="stylesheet" />
+    <link href="/Assets/Styles/index.css" rel="stylesheet" />
 </head>
 <body>
     <nav>
@@ -14,37 +14,57 @@
         <!-- logo -->
         <div class="scissor-logo">
           <a href="../index.html">
-            <img src="Assets/Images/Logo.svg" />
+            <img src="/Assets/Images/Logo.svg" />
           </a>
         </div>
   
         <!-- mid nav tab -->
         <div class="nav-btn">
-          <a style="color: var(--blue1)">My URLs</a>
+          <a style="color: var(--blue1)" href="./url.html">My URLs</a>
           <label for="features">Features</label>
           <select name="features" id="features">
             <option value="lorem"></option>
-            <option value="saab"></option>
-            <option value="ipsum"></option>
-            <option value="audi"></option>
+            <option value="lorem">lorem</option>
+            <option value="saab">saab</option>
+            <option value="ipsum">ipsum</option>
+            <option value="audi">audi</option>
           </select>
-          <a>Pricing</a>
+          <a href="/plan/plan.html" style="font-size: 16px">Pricing</a>
           <a>Analytics</a>
-          <a href="FAQs/faq.html">FAQs</a>
+          <a href="/FAQs/faq.html">FAQs</a>
         </div>
   
         <!-- right nav tab -->
-        <div class="nav-log">
-          <p><a style="color: var(--blue1); font-size: 16px">Log in</a></p>
-          <div class="button">
-            <p><a href="./plan.html" style="font-size: 16px">Try for free</a></p>
-          </div>
-        </div>
-      </nav>
-    <div class="URL-container">
-        <form>
+      <div class="nav-log">
+        <p><a style="color: var(--blue1); font-size: 16px">Log in</a></p>
+        <a>
+        <button class="blue-button font12">
+        Try for free
+        </button>
+        </a>
+      </div>
+    </nav>
 
+    <!-- URL -->
+    <div class="URL-container">
+      <div class="form-container">
+        <form>
+           <label for="url-link"></label>
+           <input type="url" id="url-link" name="Url-link" placeholder="Paste URL here...">
+           <label for="domain"></label>
+           <select id="domain" name="Domain">
+           <option value="">Choose Domain</option>
+           <option value="one">ONE</option>
+           <option value="two">TWO</option>
+           <option value="three">THREE</option>
+           <option value="four">FOUR</option>
+           </select>
+           <label for="alias"></label>
+           <input type="text" id="alias" name="Alias" placeholder="Type Alias here..." >
+           <label for="trim"></label>
+           <input type="submit" id="trim" name="Submit" value="Trim URL" class="blue-button">
         </form>
+      </div>
     </div>
 </body>
 </html>
