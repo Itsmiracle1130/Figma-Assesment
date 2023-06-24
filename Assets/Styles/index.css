@@ -76,8 +76,36 @@ nav, option{
   font-family: var(--medium-font);
   width: 100%;
 }
+/* link syles */
 a{
   font-family: var(--medium-font);
+  text-decoration: none;
+}
+a:hover {
+  color: burlywood;
+  text-decoration: none;
+}
+a:active{
+  font-family: var(--medium-font);
+  text-decoration: none;
+}
+a:visited{
+  font-family: var(--medium-font);
+  text-decoration: none;
+  color: black;
+}
+#nav-blue{
+  color: var(--blue1);
+  font-family: var(--medium-font);
+  text-decoration: none;
+}
+#nav-blue:hover{
+  color: burlywood;
+  text-decoration: none;
+}
+#nav-blue:active{
+  font-family: var(--medium-font);
+  text-decoration: none;
 }
 
 .nav-btn,
@@ -293,7 +321,7 @@ section {
 
 .ac-container {
   width: 100%;
-  margin: 10px auto 30px auto;
+  margin: 10px auto 150px auto;
   text-align: left;
 }
 
@@ -515,7 +543,7 @@ input, #domain{
   position: relative;
   margin: 0 auto;
   width: 392px;
-  top: 40px;
+  top: 50px;
 }
 .url-text{
   position: relative;
