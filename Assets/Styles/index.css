@@ -7,6 +7,7 @@
   --medium-font: Gilroy-Medium;
   --blue2: #005AE2;
   --blue3: #1E3448;
+  --primary-100: #3284FF;
 }
 
 body {
@@ -492,12 +493,44 @@ input, #domain{
 #url-link{
   width: 392px;
 }
+#domain{
+  position: relative;
+  right: 10px;
+  width: 180px;
+  border-color: var(--primary-100);
+
+}
+#alias{
+  width: 180px;
+  height: 36px;
+}
+.domain-alias{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 20px;
+}
 #trim{
   position: relative;
   margin: 0 auto;
   width: 392px;
   top: 40px;
-  
+}
+.url-text{
+  position: relative;
+  top: 85px;
+}
+.url-text p{
+  font-size: 14px;
+  text-align: left;
+  font-family: var(--medium-font);
+  color: var(--primary-100);
+}
+::placeholder, option{
+  color: var(--primary-100);
+  font-family: var(--medium-font);
+  font-size: 14px;
 }
 
 /* footer */
