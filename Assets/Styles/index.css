@@ -162,7 +162,7 @@ section {
 }
 .paint {
   position: absolute;
-  left: 595px;
+  left: 698px;
   top: 170px;
 }
 /* style the button below */
@@ -219,7 +219,7 @@ section {
 .object-behind {
   position: relative;
   height: 257px;
-  left: 437px;
+  left: 500px;
   top: 135px;
 }
 
@@ -229,8 +229,9 @@ section {
   margin: 0 auto;
   position: relative;
   top: 150px;
-  right: 50px;
+  left: 40px;
   padding: 0;
+  width: 100%;
 }
 /* Oval shape */
 .oval-floor {
@@ -248,7 +249,8 @@ section {
 /* FAQs */
 .FAQ-body{
   background-image: url("/Assets/Images/FAQs\ background.svg");
-  /* background-size: cover; */
+  background-position: center;
+  background-size: cover;
   
 }
 
@@ -460,6 +462,8 @@ position: relative;
 .URL-container {
   background-image: url('/Assets/Images/URLframe.jpg');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 523px;
   margin-top: 30px;
   display: flex;
@@ -499,7 +503,9 @@ input, #domain{
 /* footer */
 footer{
   background-image: url('/Assets/Images/footerFrame.jpg');
-  height: 561px;
+  background-position: center;
+  background-size: cover;
+  /* height: 561px; */
 }
 .socials{
   display: flex;
@@ -535,7 +541,7 @@ footer{
 .footer-lists p{
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   justify-content: center;
 }
 .lower-lists{
@@ -562,5 +568,5 @@ footer{
 .footer2023 p{
   padding-left: 5px;
   font-family: var(--medium-font);
-  font-size: 14px;
+  font-size: 12px;
 }
