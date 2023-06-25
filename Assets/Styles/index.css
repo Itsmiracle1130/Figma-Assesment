@@ -35,6 +35,10 @@ body {
 .font24{
   font-size: 24px;
 }
+.font32{
+  font-size: 32px;
+  line-height: 40px;
+}
 
 p, a {
   font-family: var(--semibold-font);
@@ -257,7 +261,7 @@ section {
 .floor-object {
   margin: 0 auto;
   position: relative;
-  top: 150px;
+  top: 154px;
   left: 40px;
   padding: 0;
   width: 100%;
@@ -269,9 +273,76 @@ section {
   width: 950px;
   background-color: #E2E9F0;
   border-radius: 50%;
-  top: 30px;
+  top: 22px;
   left: 250px;
   filter: drop-shadow(0px 4px 4px rgba(18, 36, 89, 0.35));
+}
+
+/* one step row */
+.one-stop{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F8F7F7;
+  top: 150px;
+  height: 220px;
+}
+.one-stop-heading{
+  position: relative;
+  right: 100px;
+  top: 50px;
+}
+.one-stop-options{
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  position: relative;
+  top: 70px;
+}
+.one-stop-option .font32{
+  text-align: left;
+}
+
+/* why choose */
+.why-choose{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 300px;
+  margin-bottom: 300px;
+  border: 1px solid black;
+}
+.why-choose-heading{
+  width: 400px;
+  position: relative;
+  left: 160px;
+}
+.why-choose-heading img{
+  position: relative;
+  top: 8px;
+}
+.why-choose-heading h1{
+  position: relative;
+  right: 15px;
+}
+.why-choose-options{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 210px;
+  top: 35px;
+  height: 550px;
+  flex-wrap: wrap;
+  width: 720px;
+  gap: 28px;
+  margin-bottom: 100px;;
+}
+.why-choose-option{
+  width: 340px;
+}
+.why-choose-option .font32{
+  text-align: left;
 }
 
 
