@@ -85,16 +85,14 @@ a{
   font-family: var(--medium-font);
   text-decoration: none;
 }
-a:hover {
+a:hover, .nav-btn a:hover {
   color: burlywood;
   text-decoration: none;
 }
 a:active{
-  font-family: var(--medium-font);
   text-decoration: none;
 }
 a:visited{
-  font-family: var(--medium-font);
   text-decoration: none;
   color: black;
 }
@@ -311,7 +309,6 @@ section {
   flex-direction: row;
   top: 300px;
   margin-bottom: 300px;
-  border: 1px solid black;
 }
 .why-choose-heading{
   width: 400px;
